@@ -4,19 +4,20 @@ data_activity_report は、日次のデバイス活動ログ（CSV/TSV）から�
 を作成して Excel / CSV に出力するシンプルなレポートツールです。
 
 入出力
-	•	Input: input/transaction_log.csv（またはTSV）
-	◦	先頭行はカラム名。必須カラム：
-	▪	date（日付）
-	▪	device_id（デバイスID）
-	▪	store_id（ストアID）
-	▪	device_class（任意の分類）
-	▪	store_name（ストア名）
-	▪	total_value（日計の合計値）
-	▪	event_count（日次のイベント件数）
-	•	Output:
-	◦	Excel: output/activity_report.xlsx（シート: DeviceDaily, DeviceSummary）
-	◦	CSV: output/device_daily.csv, output/device_summary.csv
-	◦	Log: output/logs/data_activity_report.log
+	・Input: input/transaction_log.csv（またはTSV）
+	・先頭行はカラム名。必須カラム：
+	・date（日付）
+	・device_id（デバイスID）
+	・store_id（ストアID）
+	・device_class（任意の分類）
+	・store_name（ストア名）
+	・total_value（日計の合計値）
+	・event_count（日次のイベント件数）
+	・Output:
+	・Excel: output/activity_report.xlsx（シート: DeviceDaily, DeviceSummary）
+	・CSV: output/device_daily.csv, output/device_summary.csv
+	・Log: output/logs/data_activity_report.log
+	
 使い方
 python data_activity_report.py
 任意で config.json を同ディレクトリに置くと設定を上書きできます：
